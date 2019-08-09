@@ -7,7 +7,7 @@ int main(){
     {
       if (a[j] > a[j+1]) 
       {
-        int temp =a[j];
+        long int temp =a[j];
         a[j]=a[j+1];
         a[j+1]=temp;
       }
@@ -17,8 +17,8 @@ int main(){
    // for (int i=0; i<5; i++){
     //   printf("%d\n",a[i]);}
     //printf("\n");
-    int min =a[0]+a[1]+a[2]+a[3];
-    int max =a[1]+a[2]+a[3]+a[4];
+    long int min =a[0]+a[1]+a[2]+a[3];
+    long int max =a[1]+a[2]+a[3]+a[4];
     printf("%d %d",min,max);
 
 return 0;
