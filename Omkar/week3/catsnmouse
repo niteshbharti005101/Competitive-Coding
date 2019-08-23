@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+
+{
+    int x,y,z,q=0,d=0,e=0;
+    cin>>q;
+
+    for(int i=0; i<q; i++)
+        {
+         cin>>x>>y>>z;
+         if(x>z)
+           {
+               d= x-z;
+           }
+         else{
+             d=z-x;
+         }
+         if(y>z)
+           {
+               e= y-z;
+           }
+         else{
+             e=z-y;
+         }
+         if(d>e){
+             cout<<"Cat B"<<endl;
+         }
+         else if(d<e){
+             cout<<"Cat A"<<endl;}
+         else{
+            cout<<"Mouse C"<<endl;
+             }
+           
+        
+        }
+}
