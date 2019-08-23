@@ -5,13 +5,21 @@ int main(){
 
     for(int i=0; i<x; i++){
         scanf("%d %d %d", &a, &b, &c);
+        int A = c-a;
+        int B = c-b;
 
-        if((c-a)==(c-b)){
-            printf("Mouse C");
-        } else if((c-a)>(c-b)){
-            printf("Cat A");
-        } else if((c-a)>(c-b)){
-            printf("Cat B");
+        if(A<0){
+            A = a-c;
+        }
+        if(B<0){
+            B = b-c;
+        }
+        if(A==B){
+            printf("Mouse C\n");
+        } else if(A>B){
+            printf("Cat B\n");
+        } else if(A<B){
+            printf("Cat A\n");
         }
     }
 
