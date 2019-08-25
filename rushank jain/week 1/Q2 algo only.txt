@@ -1,0 +1,7 @@
+for (int i=0;i<rows;i++){
+  for (int j=0;j<coloumns;j++){
+    if(i==j){
+      diff1=diff1+list[i][j];}
+    if(i==n-j-1){
+      diff2=diff2+list[i][j];}
+  }}

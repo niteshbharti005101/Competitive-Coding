@@ -1,0 +1,11 @@
+int main()
+{int a,b,c,count;
+    cin>>a>>b>>c;
+    count=0;
+    for(int a;a<b;a++){
+        if(a%c==0){
+            count=count+1;
+        }
+    }
+    cout<<count<<"/n";
+}
