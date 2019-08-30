@@ -1,12 +1,18 @@
-#include<iostream>
-using namespace std;
-int main() {
+#include <iostream>
 
-   long long int n,sum = 0;
+using namespace std;
+
+int main() {
+   int n;
+   long long sum = 0;
+   long long int a[10];
     cin >> n;
     for(int i = 0; i < n; i++){
-        long long int a;cin >> a;
-        sum+=a;
+        
+        cin >> a[i];
+    }
+    for(int i = 0;i<n;i++){
+        sum=sum+a[i];
     }
     cout << sum << endl;
     return 0;
