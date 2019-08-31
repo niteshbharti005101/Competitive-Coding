@@ -38,8 +38,11 @@ int main(){
     cin >> hr;
     int mm;
     cin >> mm;
-    if(mm == 0) cout << hour[hr-1] << " o' clock" << endl;
-    else if(mm <= 30) cout << minutes[mm-1] << " past " << hour[hr-1] << endl;
-    else cout << minutes[60 - mm -1] << " to " << hour[hr] << endl;
+    if(mm == 0) 
+      {cout << hour[hr-1] << " o' clock" << endl;}
+    else if(mm <= 30)
+      {cout << minutes[mm-1] << " past " << hour[hr-1] << endl;}
+    else 
+      {cout << minutes[60 - mm -1] << " to " << hour[hr] << endl;}
     return 0;
 }
