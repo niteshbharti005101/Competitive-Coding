@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem?h_r=internal-search
 #include <bits/stdc++.h>
 
 using namespace std;
