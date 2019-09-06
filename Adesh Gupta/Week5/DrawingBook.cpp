@@ -14,7 +14,7 @@ int main() {
     int from_front = total_pages(p) - 1;
     int from_back = entire_book - from_front - 1;
     
-    cout << std::min(from_front, from_back) << '\n';
+    cout << min(from_front, from_back) << '\n';
     
     return 0;
 }
