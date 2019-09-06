@@ -1,0 +1,14 @@
+int migratoryBirds(vector<int> arr) {
+    int i,j=arr.size(),h,count,o=0,biggest;
+    for (int i=0;i<=j;i++){
+     for(int h=0;h<=j;h++){
+         if (arr[i]==arr[h]){
+             count++;
+             
+         }if(o<count){
+         o=count;
+         biggest=arr[i];}}
+         count=0;}
+
+return biggest;
+}

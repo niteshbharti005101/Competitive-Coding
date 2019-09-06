@@ -1,0 +1,21 @@
+#include <bits/stdc++.h> 
+using namespace std; 
+int main()
+{ 
+    int i,j,k,count=0;
+    cin>>i>>j>>k;
+    for (int l= i; l <= j; l++)   {
+        int a=l,reverse=0;
+         while (a !=0)  
+    {    
+        
+        reverse= reverse * 10 + a % 10; 
+        a /= 10; 
+    } 
+     if(abs(reverse - l) % k == 0){
+         count++;
+     }}
+     cout<<count;
+  return 0;  
+} 
+  

@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+// Complete the encryption function below.
+int main(){
+    int leng; 
+    string s;
+    getline(cin, s);
+    leng=s.size();
+    int r= floor(sqrt(leng));
+    int t=ceil(sqrt(leng));
+    while((r*t)<leng){
+    r++;
+    }
+    for (int i=0;i<t;i++){
+        for(int j=i;j<leng;j=j+t){
+            cout<<s[j];
+
+
+        }cout<<" ";
+    }
+
+}
+
