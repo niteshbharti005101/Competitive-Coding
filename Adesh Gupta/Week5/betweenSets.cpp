@@ -7,7 +7,7 @@ int main() {
     cin>>n>>m;
     int a[100], b[100];
     for (int i=0; i<n; i++)
-        cin<<a[i];
+        cin>>a[i];
     for (int i=0; i<m; i++)
         cin>>b[i];
     int cnt = 0;
