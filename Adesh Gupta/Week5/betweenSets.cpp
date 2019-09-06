@@ -4,12 +4,12 @@ using namespace std;
 
 int main() {
     int n, m;
-    scanf("%d %d", &n, &m);
+    cin>>n>>m;
     int a[100], b[100];
     for (int i=0; i<n; i++)
-        scanf("%d", &a[i]);
+        cin<<a[i];
     for (int i=0; i<m; i++)
-        scanf("%d", &b[i]);
+        cin>>b[i];
     int cnt = 0;
     for (int k=1; k<=100; k++)
     {
@@ -23,6 +23,6 @@ int main() {
         if (flag == 1)
             cnt ++;
     }
-    printf("%d\n", cnt);
+    cout<<cnt;
     return 0;
 }
