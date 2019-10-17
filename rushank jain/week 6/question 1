@@ -1,0 +1,29 @@
+#include<iostream>
+
+int main(){
+
+    int year;
+    std::cin>>year;
+    int i,k,l,j;
+    if(year==1918){
+        j=26;
+        std::cout<<j<<"."<<"09"<<"."<<year;}
+    else{if(year<1918){
+            if(year%4==0){
+            k=256-244;
+            std::cout<<k<<"."<<"09"<<"."<<year;}
+            else{
+            l=256-243;
+             std::cout<<l<<"."<<"09"<<"."<<year;}
+        }
+        else{
+    
+              if((year%4==0 and year%100!=0) or year%400==0){
+            k=256-244;
+            std::cout<<k<<"."<<"09"<<"."<<year;}
+               else{
+            l=256-243;
+             std::cout<<l<<"."<<"09"<<"."<<year;}
+        }
+    
+    }}
