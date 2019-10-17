@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int abc[100] = {0};
+    for(int i = 0; i < 26; i++)
+        cin >> abc[i];
+    string s;
+    cin >> s;
+    int h = 0;
+    int d= s.size();
+    for(int i = 0; i <d ; i++)
+        h = max(h, abc[s[i] - 'a']);
+    cout << h * d;
+    return 0;
+}
+
+   
